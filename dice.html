@@ -20,19 +20,19 @@
         <div class="dice-row">
             <div class="dice-card">
                 <img class="d6-img" src="https://i.pinimg.com/originals/91/a5/89/91a5892bcda478077dfd157d7f4f7794.gif" alt="D6 Dice" />
-                    <button data-sides="6">Roll D6</button>
+                    <button onclick="rollDice(6, 'result-d6')" data-sides="6">Roll D6</button>
                     <p id="result-d6" class="result"></p>
             </div>
         
             <div class="dice-card">
                 <img class="d10-img" src="https://www.chessex.com/images/thumbs/0002689_PQ1004.jpg_550.jpeg" alt="D10 Dice" />
-                    <button data-sides="10">Roll D10</button>
+                    <button onclick="rollDice(10, 'result-d10')" data-sides="10">Roll D10</button>
                     <p id="result-d10" class="result"></p>
             </div>
 
             <div class="dice-card">
                 <img class="d20-img" src="https://static.wixstatic.com/media/ee95b6_2ae7bf64fdc44ed79af82657080c6931~mv2.gif/v1/fit/w_50,h_50,q_90/file.webp" alt="D20 Dice" />
-                    <button data-sides="20">Roll D20</button>
+                    <button onclick="rollDice(20, 'result-d20')" data-sides="20">Roll D20</button>
                     <p id="result-d20" class="result"></p>
             </div>
         </div>
@@ -42,7 +42,6 @@
     <footer>
         <p>Powered by devInc 2026</p>
     </footer>
-
+<script src="dice.js"></script>
 </body>
-
 </html>
