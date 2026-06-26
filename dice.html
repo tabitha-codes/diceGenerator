@@ -3,44 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Free Web tutorials">
+    <meta name="description" content="A dice generator for D6, D10, and D20 by Tabitha Miller">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Tabitha Miller">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dice.css">
     <title>devsInc Dice Generator by Tabitha Miller</title>
-    <!-- <base href=https://www.mysite.com/ target="_blank"> -->
 </head>
 
 <body>
     <header>
-        <nav>
-        </nav>
         <h1>Dice Generator by Tabitha Miller</h1>
     </header>
 
     <section>
         <div class="dice-row">
             <div class="dice-card">
-                <img class="one" src="https://i.pinimg.com/originals/91/a5/89/91a5892bcda478077dfd157d7f4f7794.gif" alt="D6 Dice" />
-                    <button>Roll Dice</button>
+                <img class="d6-img" src="https://i.pinimg.com/originals/91/a5/89/91a5892bcda478077dfd157d7f4f7794.gif" alt="D6 Dice" />
+                    <button data-sides="6">Roll D6</button>
+                    <p id="result-d6" class="result"></p>
             </div>
         
             <div class="dice-card">
-                <img class="two" src="https://www.chessex.com/images/thumbs/0002689_PQ1004.jpg_550.jpeg" alt="D6 Dice" />
-                    <button>Roll Dice</button>
+                <img class="d10-img" src="https://www.chessex.com/images/thumbs/0002689_PQ1004.jpg_550.jpeg" alt="D10 Dice" />
+                    <button data-sides="10">Roll D10</button>
+                    <p id="result-d10" class="result"></p>
             </div>
 
             <div class="dice-card">
-                <img class="three" src="https://static.wixstatic.com/media/ee95b6_2ae7bf64fdc44ed79af82657080c6931~mv2.gif/v1/fit/w_50,h_50,q_90/file.webp" alt="D6 Dice" />
-                    <button>Roll Dice</button>
+                <img class="d20-img" src="https://static.wixstatic.com/media/ee95b6_2ae7bf64fdc44ed79af82657080c6931~mv2.gif/v1/fit/w_50,h_50,q_90/file.webp" alt="D20 Dice" />
+                    <button data-sides="20">Roll D20</button>
+                    <p id="result-d20" class="result"></p>
             </div>
         </div>
     </section>
 
 
     <footer>
-        <h2>Powered by devInc 2026</h2>
+        <p>Powered by devInc 2026</p>
     </footer>
 
 </body>
